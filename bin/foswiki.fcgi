@@ -26,12 +26,11 @@
 use strict;
 use warnings;
 
-use lib '/var/www/foswiki/bin';
-use lib '/var/www/foswiki/lib';
-
 BEGIN {
+    use File::Find::Rule;
+    my @dirs = File::Find::Rule->directory->in('/var/www/foswiki');
     $Foswiki::cfg{Engine} = 'Foswiki::Engine::FastCGI';
-    @INC = ( '.', grep { $_ ne '.' } @INC );
+    @INC = ( '.', grep { $_ ne '.' } @INC, grep { $_ ne '.' } @dirs );
     delete $ENV{FOSWIKI_ACTION} if exists $ENV{FOSWIKI_ACTION};
     require 'setlib.cfg';
 }
