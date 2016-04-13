@@ -1,0 +1,93 @@
+---+ Installing LdapContrib
+> Loading package installer
+   * fetching LdapContrib installer from http://foswiki.org/pub/Extensions/...
+---++ Dependency Report for LdapContrib ...
+> *INSTALLED*
+	* Authen::SASL version 2.15 installed 
+	* DB_File version 1.830 installed 
+	* DB_File::Lock version 0.05 installed 
+	* Digest::MD5 version 2.52 installed 
+	* GSSAPI version 0.28 installed 
+	* IO::Socket::INET6 version 2.69 installed 
+	* IO::Socket::SSL version 1.94 installed 
+	* Net::LDAP version 0.56 installed 
+---+++ Creating backup of LdapContrib ...
+	* Nothing to backup
+> Running pre-install for LdapContrib ...
+---+++ Installing LdapContrib
+	* fetching LdapContrib from http://foswiki.org/pub/Extensions/ ...
+> Unpacking /tmp/D6bOE6J4PU.tgz..., Size: 46050 Modified: Wed Apr 13 19:30:23 2016
+> Saving /tmp/D6bOE6J4PU.tgz to /var/www/foswiki/working/configure/download/LdapContrib.tgz
+> Installed: 10 files copied; 0 filed checked in, 0 files attached
+> _Changed:_ {Ldap}{Host} = 'ldap.my.domain.com'
+> _Changed:_ {Ldap}{Port} = 389
+> _Changed:_ {Ldap}{IPv6} = 0
+> _Changed:_ {Ldap}{Version} = '3'
+> _Changed:_ {Ldap}{Base} = 'dc=my,dc=domain,dc=com'
+> _Changed:_ {Ldap}{BindDN} = ''
+> _Changed:_ {Ldap}{BindPassword} = 'secret'
+> _Changed:_ {Ldap}{KerberosKeyTab} = '/etc/krb5.keytab'
+> _Changed:_ {Ldap}{CharSet} = 'utf-8'
+> _Changed:_ {Ldap}{UseSASL} = 0
+> _Changed:_ {Ldap}{SASLMechanism} = 'PLAIN CRAM-MD5 EXTERNAL ANONYMOUS'
+> _Changed:_ {Ldap}{UseTLS} = 0
+> _Changed:_ {Ldap}{TLSSSLVersion} = 'tlsv1'
+> _Changed:_ {Ldap}{TLSVerify} = 'require'
+> _Changed:_ {Ldap}{TLSCAPath} = ''
+> _Changed:_ {Ldap}{TLSCAFile} = ''
+> _Changed:_ {Ldap}{TLSClientCert} = ''
+> _Changed:_ {Ldap}{TLSClientKey} = ''
+> _Changed:_ {Ldap}{Debug} = 0
+> _Changed:_ {Ldap}{UserBase} = '[\'ou=people,dc=my,dc=domain,dc=com\']'
+> _Changed:_ {Ldap}{LoginFilter} = 'objectClass=posixAccount'
+> _Changed:_ {Ldap}{UserScope} = 'sub'
+> _Changed:_ {Ldap}{LoginAttribute} = 'uid'
+> _Changed:_ {Ldap}{MailAttribute} = 'mail'
+> _Changed:_ {Ldap}{WikiNameAttributes} = 'cn'
+> _Changed:_ {Ldap}{NormalizeWikiNames} = 1
+> _Changed:_ {Ldap}{NormalizeLoginNames} = 0
+> _Changed:_ {Ldap}{CaseSensitiveLogin} = 0
+> _Changed:_ {Ldap}{WikiNameAliases} = ''
+> _Changed:_ {Ldap}{RewriteWikiNames} = '{
+  \'^(.*)@.*$\' => \'$1\'
+}'
+> _Changed:_ {Ldap}{RewriteLoginNames} = '{}'
+> _Changed:_ {Ldap}{AllowChangePassword} = 0
+> _Changed:_ {Ldap}{SecondaryPasswordManager} = 'none'
+> _Changed:_ {Ldap}{UserMappingTopic} = ''
+> _Changed:_ {Ldap}{GroupBase} = '[\'ou=group,dc=my,dc=domain,dc=com\']'
+> _Changed:_ {Ldap}{GroupFilter} = 'objectClass=posixGroup'
+> _Changed:_ {Ldap}{GroupScope} = 'sub'
+> _Changed:_ {Ldap}{GroupAttribute} = 'cn'
+> _Changed:_ {Ldap}{PrimaryGroupAttribute} = 'gidNumber'
+> _Changed:_ {Ldap}{MemberAttribute} = 'memberUid'
+> _Changed:_ {Ldap}{InnerGroupAttribute} = 'memberUid'
+> _Changed:_ {Ldap}{MemberIndirection} = 0
+> _Changed:_ {Ldap}{WikiGroupsBackoff} = 1
+> _Changed:_ {Ldap}{NormalizeGroupNames} = 0
+> _Changed:_ {Ldap}{IgnorePrivateGroups} = 1
+> _Changed:_ {Ldap}{MapGroups} = 1
+> _Changed:_ {Ldap}{RewriteGroups} = '{}'
+> _Changed:_ {Ldap}{MergeGroups} = 0
+> _Changed:_ {Ldap}{MaxCacheAge} = 86400
+> _Changed:_ {Ldap}{Precache} = 1
+> _Changed:_ {Ldap}{PageSize} = 500
+> _Changed:_ {Ldap}{Exclude} = 'WikiGuest, ProjectContributor, RegistrationAgent, UnknownUser, AdminGroup, NobodyGroup, AdminUser, admin, guest'
+> Installed:  LdapContrib_installer to /var/www/foswiki/working/configure/pkgdata
+> Running post-install for LdapContrib...
+> Before proceeding, review the dependency reports of each installed extension
+  and resolve any dependencies, as required.
+   * External non-perl dependencies are never automatically resolved by Foswiki.
+   * Dependencies noted as 'Optional' will not be automatically resolved, and
+   * CPAN dependencies are never automatically resolved.
+
+> After your configuration has been saved:
+   * Visit <a href="http://wiki.spindance.net/System/LdapContrib" target="_blank">LdapContrib extension page</a>
+   * Check <a href="http://wiki.spindance.net/System/InstalledPlugins" target="_blank">InstalledPlugins</a> to check for errors.
+
+> The following configuration changes are needed to enable plugins.
+These will be automatically applied when the configuration is saved.
+
+
+> *WARNING:* 
+> Installation finished

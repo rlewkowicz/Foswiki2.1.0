@@ -1,0 +1,207 @@
+%META:TOPICINFO{author="ProjectContributor" comment="" date="1418737821" format="1.1" version="1"}%
+---+!! <nop>%TOPIC%
+%TOC%
+
+This plugin provides an interface to query an LDAP directory and display the results in a <nop>WikiApplication
+It is a complete rewrite of the Foswiki:Extensions/LdapPlugin by Gerard Hickey to provide
+greater flexibility and performance based on the Foswiki:Extensions/LdapContrib package.
+
+---++ Syntax Rules
+---+++ LDAP
+<verbatim>%LDAP{(filter=)"filter" ...}%</verbatim>
+Query an LDAP directrory.
+
+Parameters:
+   * =filter=: the LDAP query string
+   * =host=: host IP or name to connect to
+   * =port=: port to of the host
+   * =version=: protocol version; possible values: 2,3
+   * =ssl=: use ssl to bind to the server; possible values 0,1
+   * =base=: base dn of the (sub)tree to search in; 
+     if =base= is written in brackets (e.g. 'base="(ou=people)"') then it is prepended to the default
+     base of the LdapContrib
+   * =scope=: scope of search; possible values: sub, base, one
+   * =format=: format string used to display a database record
+   * =header=: header to prepend the output; default: '$dn'
+   * =footer=: footer to appended to the output
+   * =separator=: separator between database records; default: '$n'
+   * =sort=: name of attributes to sort the output %RED%(this feature is currently disabled)%ENDCOLOR%
+   * =reverse=: reverse the result set; possible values: on, off; default: off
+   * =limit=: maximum number of records to return; default: 0 (unlimited)
+   * =skip=: number of records in the hit set to skip before displaying them; default: 0 
+   * =exclude=: regular expression matched against the dn of a returned record. the record will be skipped if it matches.
+   * =casesensitive=: switch this to off for the =exclude= and =include= parameter to operate in case-insensitive mode
+   * =include=: regular expression matched against the dn of a returned record. not matching record will be skipped.
+   * =hidenull=: wether to hide any output on an empty hit set; possible values: on, off; default: off
+   * =clear=: comma separated list of attributes to be removed from the output if they are not resolved
+   * =cache=: time in seconds the result of the ldap query will be cached and not fetched anew; defaults to =$Foswiki::cfg{Ldap}{DefaultCacheExpire}=, or =0= if not set.
+   * =blob=: comma separated list of attributes to be handled as blobs, like images stored in your LDAP directory.
+
+Cgi Parameters:
+   * =refresh=: refresh the cache of blobs (i.e. jpegPhotos); possible values: on, off, ldap; default: off;
+
+The =header=, =format= and =footer= format strings may contain the following variables:
+   * $percnt: % sign
+   * $dollar: $ sign
+   * $n: newline
+   * $count: the number of hits
+   * $index: the record number
+   * $&lt;attr-name>: the value of the record attribute &lt;attr-name>
+
+---+++ LDAPUSERS
+<verbatim>%LDAPUSERS{...}%</verbatim>
+List all LDAP userinformation. Information is drawn from cache and not from
+the LDAP server. Use =?refreshldap=on= to update.
+
+Parameters:
+   * =format=: format string used to display a user record
+   * =header=: header to prepend the output
+   * =footer=: footer to appended to the output
+   * =sep=: separator between database records; default: '$n'
+   * =limit=: maximum number of records to return; default: 0 (unlimited)
+   * =skip=: number of records in the hit set to skip before displaying them; default: 0 
+   * =include=: regular expression a user's <nop>WikiName must match to be included in the output
+   * =exclude=: regular expression a user's <nop>WikiName must not match
+   * =casesensitive=: switch this to off for the =exclude= and =include= parameter to operate in case-insensitive mode
+   * =hideunknown=: on/off, enable/disable filtering out users that did not log in yet and thus
+     have no hometopic (e.g. created by Foswiki:Extensions/NewUserPlugin), defaults to 'on'
+
+The =format= string may contain the following variables:
+   * $percnt: % sign
+   * $dollar: $ sign
+   * $n: newline
+   * $index: the record number
+   * $wikiName: the user's <nop>WikiName
+   * $loginName: the user's login name
+   * $displayName: a link pointing to the users hometopic in the %USERSWEB% web, if it exists, and
+     '&lt;nop&gt;$wikiName' otherwise
+   * $emails: the list of all known email addresses
+ 
+---++ Examples
+
+---+++ Query user accounts
+<verbatim class="tml">
+%LDAP{"(objectClass=posixAccount)" 
+  base="(ou=people)"
+  limit="100" 
+  cache="3600"
+  header="| *Nr* | *Name* | *Mail* | *Telephone* |$n" 
+  format="| $index | $cn | $mail | $telephoneNumber  |" 
+  sort="cn"
+  clear="$mail,$telephoneNumber, $cn"
+}%
+</verbatim>
+
+---+++ Query user groups
+
+<verbatim class="tml">
+%LDAP{"(objectClass=posixGroup)" 
+  base="(ou=group)" 
+  limit="100" 
+  cache="3600"
+  header="| *Nr* | *Group* | *Members* |$n" 
+  format="| $index | $cn | $memberUid |" 
+  clear="$mail,$memberUid"
+  sort="cn"
+}%
+</verbatim>
+
+---+++ Display cached users records
+
+<verbatim class="tml">
+%LDAPUSERS{limit="10"}%
+</verbatim>
+
+
+---++ Plugin Settings
+<!-- provided for compatibility only
+   * Set SHORTDESCRIPTION = Query and display data from an LDAP directory
+-->
+
+The %TOPIC% will use the default configuration of the LdapContrib in your =LocalSite.cfg= file, that is
+   * $Foswiki::cfg{Ldap}{Host} (overridable per query)
+   * $Foswiki::cfg{Ldap}{Port} (overridable per query)
+   * $Foswiki::cfg{Ldap}{Base} (overridable per query)
+   * $Foswiki::cfg{Ldap}{Version} (overridable per query)
+   * $Foswiki::cfg{Ldap}{SSL} (overridable per query)
+   * $Foswiki::cfg{Ldap}{BindDN}
+   * $Foswiki::cfg{Ldap}{BindPasswd}
+
+---++ Plugin Installation Instructions
+You do not need to install anything in the browser to use this extension. The following instructions are for the administrator who installs the extension on the server.
+
+Open configure, and open the "Extensions" section. Use "Find More Extensions" to get a list of available extensions. Select "Install".
+
+If you have any problems, or if the extension isn't available in =configure=, then you can still install manually from the command-line. See http://foswiki.org/Support/ManuallyInstallingExtensions for more help.
+
+
+If you are using %TOPIC% together with LdapContrib to integrate LDAP users to Foswiki you might also want
+to display an according list of all [[%USERSWEB%.WikiUsers]]. Therefore %TOPIC% comes with a [[LdapWikiUsersViewTemplate][view template]]
+that you have to apply to the <nop>WikiUsers topic. Do so either by adding
+
+<verbatim class="tml">   * Set VIEW_TEMPLATE = LdapWikiUsersView</verbatim>
+
+or by adding 
+
+<verbatim>
+$Foswiki::cfg{Plugins}{AutoTemplatePlugin}{ViewTemplateRules} = {
+...
+    'WikiUsers' => 'LdapWikiUsersView',
+...
+};
+</verbatim>
+
+to your =LocalSite.cfg= in case Foswiki:Extensions/AutoTemplatePlugin is installed as well. 
+
+Please do _not_ use the =LdapWikiUsersView= template in case your are running Foswiki:Extensions/SolrPlugin as well which
+implements a fast solr-based person search with a different =SolrWikiUsersView= template.
+
+
+---++ Dependencies
+<table border="1" class="foswikiTable"><tr><th>Name</th><th>Version</th><th>Description</th></tr><tr><td align="left">Foswiki::Contrib::LdapContrib</td><td align="left">&gt;=5.03</td><td align="left">Required</td></tr><tr><td align="left">Cache::Cache</td><td align="left">&gt;=1.05</td><td align="left">Required</td></tr></table>
+
+---++ Plugin Info
+
+|  Copyright &copy;: | 2006-2015 Michael Daum http://michaeldaumconsulting.com |
+|  Change History: | &nbsp; |
+|  31 Aug 2015: | added support to index profile images stored in LDAP and indexed in Solr |
+|  16 Dec 2014: | added view template for [[%USERSWEB%.WikiUsers]]; \
+                  more robust extraction of user information while indexing profiles with Foswiki:Extensions/SolrPlugin; \
+                  wrapping examples into verbatim sections not to expose usernames by default |
+|  18 Mar 2014: | disable sorting temporarily as =Net::LDAP::Search::sorted()= destroys the result set on directories with references; \
+                  added =IgnoreViewRightsInSearch= feature when indexing <nop>UserTopics using [[Foswiki:Extensions/SolrPlugin][SolrPlugin]]; \
+                  properly recode strings coming from the directory |
+|  29 Nov 2012: | fixed performance problem for simple queries; \
+                  fixes due to the latest changes in <nop>LdapContrib; \
+                  fixed too many open file handles on long running solrindexing; \
+                  don't index empty email fields using <nop>SolrPlugin |
+|  21 Nov 2012: | fixed switching off the %LDAP cache when there's a global default; \
+                  rewrite of formatting code; \
+                  fixed fetching referrenced objects |
+|  19 Nov 2012: | added casesensitive include/excluding |
+|  09 Nov 2012: | added integration into [[Foswiki:Extensions/SolrPlugin][SolrPlugin's]] index process by augmenting user profiles with ldap attributes |
+|  20 Dec 2011: | added =cache= paremeter to %LDAP |
+|  17 Nov 2010: | added =exclude= and =include= parameter to %LDAP |
+|  17 Nov 2009: | renamed =sep= parameter to =separator= for consistency |
+|  27 Jan 2009: | syncing version number with <nop>LdapContrib |
+|  08 Jan 2009: | ported to foswiki |
+|  12 Jun 2008: | fixed yet another "sep" problem |
+|  13 Nov 2007: | fixed $nop  |
+|  01 Oct 2007: | added LDAPUSERS, lined up to changes in <nop>LdapContrib-2.0 |
+|  04 June 2007: | don't convert from/to utf8 if the site charset is already utf8 |
+|  18 Dec 2006: | added support for addresses as specified in RFC4517 |
+|  04 Dec 2006: | map utf8 strings from LDAP to the site's encoding and vice versa |
+|  30 Nov 2006: | replaced commonTagsHandler with a properly registered LDAP tag |
+|  31 Aug 2006: | added NO_PREFS_IN_TOPIC |
+|  19 Jul 2006: | public release |
+|  25 April 2006: | Initial (internal) version |
+
+%META:FORM{name="PackageForm"}%
+%META:FIELD{name="Author" title="Author" value="Michael Daum"}%
+%META:FIELD{name="Copyright" title="Copyright" value="Foswiki Contributors, All Rights Reserved"}%
+%META:FIELD{name="Home" title="Home" value="Foswiki:Extensions/%TOPIC%"}%
+%META:FIELD{name="License" title="License" value="GPL ([[http://www.gnu.org/copyleft/gpl.html][GNU General Public License]])"}%
+%META:FIELD{name="Release" title="Release" value="31 Aug 2015"}%
+%META:FIELD{name="Repository" title="Repository" value="https://github.com/foswiki/LdapNgPlugin"}%
+%META:FIELD{name="Support" title="Support" value="Foswiki:Support/%TOPIC%"}%
+%META:FIELD{name="Version" title="Version" value="6.10"}%

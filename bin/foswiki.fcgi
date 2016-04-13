@@ -26,6 +26,9 @@
 use strict;
 use warnings;
 
+use lib '/var/www/foswiki/bin';
+use lib '/var/www/foswiki/lib';
+
 BEGIN {
     $Foswiki::cfg{Engine} = 'Foswiki::Engine::FastCGI';
     @INC = ( '.', grep { $_ ne '.' } @INC );
@@ -102,8 +105,8 @@ foswiki.fcgi [options]
 
   Note:
     FCGI manager class defaults to Foswiki::Engine::FastCGI::ProcManager, a
-    wrapper around FCGI::ProcManager to enable automatic reload of 
-    configurations if changed. If you provide another class, probably you'll 
+    wrapper around FCGI::ProcManager to enable automatic reload of
+    configurations if changed. If you provide another class, probably you'll
     need to restart FastCGI processes manually.
 
 =cut

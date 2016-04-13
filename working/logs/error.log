@@ -1,0 +1,141 @@
+| 2016-04-13T19:27:59+03:00 warning | The password file does not exist or cannot be written.Run =configure= and check the setting of {Htpasswd}{FileName}. New user registration has been disabled until this is corrected. |
+| 2016-04-13T19:27:59+03:00 error | Foswiki::Plugins::LdapNgPlugin could not be loaded.  Errors were:
+Can't locate Foswiki/Plugins/LdapNgPlugin.pm in @INC (@INC contains: /var/www/foswiki/lib . /var/www/foswiki/lib /var/www/foswiki/bin /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 /var/www/foswiki/lib/CPAN/lib) at (eval 7488) line 2.
+BEGIN failed--compilation aborted at (eval 7488) line 2.
+
+---- |
+| 2016-04-13T19:27:59+03:00 warning | Foswiki::Plugins::LdapNgPlugin could not be loaded.  Errors were:
+Can't locate Foswiki/Plugins/LdapNgPlugin.pm in @INC (@INC contains: /var/www/foswiki/lib . /var/www/foswiki/lib /var/www/foswiki/bin /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 /var/www/foswiki/lib/CPAN/lib) at (eval 7488) line 2.
+BEGIN failed--compilation aborted at (eval 7488) line 2.
+
+---- |
+| 2016-04-13T19:28:01+03:00 warning | The password file does not exist or cannot be written.Run =configure= and check the setting of {Htpasswd}{FileName}. New user registration has been disabled until this is corrected. |
+| 2016-04-13T19:28:01+03:00 error | Foswiki::Plugins::LdapNgPlugin could not be loaded.  Errors were:
+Can't locate Foswiki/Plugins/LdapNgPlugin.pm in @INC (@INC contains: /var/www/foswiki/lib . /var/www/foswiki/lib /var/www/foswiki/bin /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 /var/www/foswiki/lib/CPAN/lib) at (eval 6707) line 2.
+BEGIN failed--compilation aborted at (eval 6707) line 2.
+
+---- |
+| 2016-04-13T19:28:01+03:00 warning | Foswiki::Plugins::LdapNgPlugin could not be loaded.  Errors were:
+Can't locate Foswiki/Plugins/LdapNgPlugin.pm in @INC (@INC contains: /var/www/foswiki/lib . /var/www/foswiki/lib /var/www/foswiki/bin /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 /var/www/foswiki/lib/CPAN/lib) at (eval 6707) line 2.
+BEGIN failed--compilation aborted at (eval 6707) line 2.
+
+---- |
+| 2016-04-13T19:28:01+03:00 warning | The password file does not exist or cannot be written.Run =configure= and check the setting of {Htpasswd}{FileName}. New user registration has been disabled until this is corrected. |
+| 2016-04-13T19:28:01+03:00 error | Foswiki::Plugins::LdapNgPlugin could not be loaded.  Errors were:
+Can't locate Foswiki/Plugins/LdapNgPlugin.pm in @INC (@INC contains: /var/www/foswiki/lib . /var/www/foswiki/lib /var/www/foswiki/bin /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 /var/www/foswiki/lib/CPAN/lib) at (eval 7840) line 2.
+BEGIN failed--compilation aborted at (eval 7840) line 2.
+
+---- |
+| 2016-04-13T19:28:01+03:00 warning | Foswiki::Plugins::LdapNgPlugin could not be loaded.  Errors were:
+Can't locate Foswiki/Plugins/LdapNgPlugin.pm in @INC (@INC contains: /var/www/foswiki/lib . /var/www/foswiki/lib /var/www/foswiki/bin /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 /var/www/foswiki/lib/CPAN/lib) at (eval 7840) line 2.
+BEGIN failed--compilation aborted at (eval 7840) line 2.
+
+---- |
+| 2016-04-13T19:28:01+03:00 warning | The password file does not exist or cannot be written.Run =configure= and check the setting of {Htpasswd}{FileName}. New user registration has been disabled until this is corrected. |
+| 2016-04-13T19:28:01+03:00 error | Foswiki::Plugins::LdapNgPlugin could not be loaded.  Errors were:
+Can't locate Foswiki/Plugins/LdapNgPlugin.pm in @INC (@INC contains: /var/www/foswiki/lib . /var/www/foswiki/lib /var/www/foswiki/bin /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 /var/www/foswiki/lib/CPAN/lib) at (eval 7607) line 2.
+BEGIN failed--compilation aborted at (eval 7607) line 2.
+
+---- |
+| 2016-04-13T19:28:01+03:00 warning | Foswiki::Plugins::LdapNgPlugin could not be loaded.  Errors were:
+Can't locate Foswiki/Plugins/LdapNgPlugin.pm in @INC (@INC contains: /var/www/foswiki/lib . /var/www/foswiki/lib /var/www/foswiki/bin /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 /var/www/foswiki/lib/CPAN/lib) at (eval 7607) line 2.
+BEGIN failed--compilation aborted at (eval 7607) line 2.
+
+---- |
+| 2016-04-13T19:28:01+03:00 warning | The password file does not exist or cannot be written.Run =configure= and check the setting of {Htpasswd}{FileName}. New user registration has been disabled until this is corrected. |
+| 2016-04-13T19:28:01+03:00 error | Foswiki::Plugins::LdapNgPlugin could not be loaded.  Errors were:
+Can't locate Foswiki/Plugins/LdapNgPlugin.pm in @INC (@INC contains: /var/www/foswiki/lib . /var/www/foswiki/lib /var/www/foswiki/bin /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 /var/www/foswiki/lib/CPAN/lib) at (eval 6827) line 2.
+BEGIN failed--compilation aborted at (eval 6827) line 2.
+
+---- |
+| 2016-04-13T19:28:01+03:00 warning | Foswiki::Plugins::LdapNgPlugin could not be loaded.  Errors were:
+Can't locate Foswiki/Plugins/LdapNgPlugin.pm in @INC (@INC contains: /var/www/foswiki/lib . /var/www/foswiki/lib /var/www/foswiki/bin /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 /var/www/foswiki/lib/CPAN/lib) at (eval 6827) line 2.
+BEGIN failed--compilation aborted at (eval 6827) line 2.
+
+---- |
+| 2016-04-13T19:28:01+03:00 warning | The password file does not exist or cannot be written.Run =configure= and check the setting of {Htpasswd}{FileName}. New user registration has been disabled until this is corrected. |
+| 2016-04-13T19:28:01+03:00 error | Foswiki::Plugins::LdapNgPlugin could not be loaded.  Errors were:
+Can't locate Foswiki/Plugins/LdapNgPlugin.pm in @INC (@INC contains: /var/www/foswiki/lib . /var/www/foswiki/lib /var/www/foswiki/bin /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 /var/www/foswiki/lib/CPAN/lib) at (eval 8830) line 2.
+BEGIN failed--compilation aborted at (eval 8830) line 2.
+
+---- |
+| 2016-04-13T19:28:01+03:00 warning | Foswiki::Plugins::LdapNgPlugin could not be loaded.  Errors were:
+Can't locate Foswiki/Plugins/LdapNgPlugin.pm in @INC (@INC contains: /var/www/foswiki/lib . /var/www/foswiki/lib /var/www/foswiki/bin /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 /var/www/foswiki/lib/CPAN/lib) at (eval 8830) line 2.
+BEGIN failed--compilation aborted at (eval 8830) line 2.
+
+---- |
+| 2016-04-13T19:28:02+03:00 warning | The password file does not exist or cannot be written.Run =configure= and check the setting of {Htpasswd}{FileName}. New user registration has been disabled until this is corrected. |
+| 2016-04-13T19:28:02+03:00 warning | The password file does not exist or cannot be written.Run =configure= and check the setting of {Htpasswd}{FileName}. New user registration has been disabled until this is corrected. |
+| 2016-04-13T19:28:02+03:00 error | Foswiki::Plugins::LdapNgPlugin could not be loaded.  Errors were:
+Can't locate Foswiki/Plugins/LdapNgPlugin.pm in @INC (@INC contains: /var/www/foswiki/lib . /var/www/foswiki/lib /var/www/foswiki/bin /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 /var/www/foswiki/lib/CPAN/lib) at (eval 9820) line 2.
+BEGIN failed--compilation aborted at (eval 9820) line 2.
+
+---- |
+| 2016-04-13T19:28:02+03:00 warning | Foswiki::Plugins::LdapNgPlugin could not be loaded.  Errors were:
+Can't locate Foswiki/Plugins/LdapNgPlugin.pm in @INC (@INC contains: /var/www/foswiki/lib . /var/www/foswiki/lib /var/www/foswiki/bin /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 /var/www/foswiki/lib/CPAN/lib) at (eval 9820) line 2.
+BEGIN failed--compilation aborted at (eval 9820) line 2.
+
+---- |
+| 2016-04-13T19:28:04+03:00 error | Foswiki::Plugins::LdapNgPlugin could not be loaded.  Errors were:
+Can't locate Foswiki/Plugins/LdapNgPlugin.pm in @INC (@INC contains: /var/www/foswiki/lib . /var/www/foswiki/lib /var/www/foswiki/bin /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 /var/www/foswiki/lib/CPAN/lib) at (eval 7759) line 2.
+BEGIN failed--compilation aborted at (eval 7759) line 2.
+
+---- |
+| 2016-04-13T19:28:04+03:00 warning | Foswiki::Plugins::LdapNgPlugin could not be loaded.  Errors were:
+Can't locate Foswiki/Plugins/LdapNgPlugin.pm in @INC (@INC contains: /var/www/foswiki/lib . /var/www/foswiki/lib /var/www/foswiki/bin /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 /var/www/foswiki/lib/CPAN/lib) at (eval 7759) line 2.
+BEGIN failed--compilation aborted at (eval 7759) line 2.
+
+---- |
+| 2016-04-13T19:28:04+03:00 warning | The password file does not exist or cannot be written.Run =configure= and check the setting of {Htpasswd}{FileName}. New user registration has been disabled until this is corrected. |
+| 2016-04-13T19:28:04+03:00 error | Foswiki::Plugins::LdapNgPlugin could not be loaded.  Errors were:
+Can't locate Foswiki/Plugins/LdapNgPlugin.pm in @INC (@INC contains: /var/www/foswiki/lib . /var/www/foswiki/lib /var/www/foswiki/bin /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 /var/www/foswiki/lib/CPAN/lib) at (eval 10392) line 2.
+BEGIN failed--compilation aborted at (eval 10392) line 2.
+
+---- |
+| 2016-04-13T19:28:04+03:00 warning | Foswiki::Plugins::LdapNgPlugin could not be loaded.  Errors were:
+Can't locate Foswiki/Plugins/LdapNgPlugin.pm in @INC (@INC contains: /var/www/foswiki/lib . /var/www/foswiki/lib /var/www/foswiki/bin /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 /var/www/foswiki/lib/CPAN/lib) at (eval 10392) line 2.
+BEGIN failed--compilation aborted at (eval 10392) line 2.
+
+---- |
+| 2016-04-13T19:28:04+03:00 error | Foswiki::Plugins::LdapNgPlugin could not be loaded.  Errors were:
+Can't locate Foswiki/Plugins/LdapNgPlugin.pm in @INC (@INC contains: /var/www/foswiki/lib . /var/www/foswiki/lib /var/www/foswiki/bin /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 /var/www/foswiki/lib/CPAN/lib) at (eval 9130) line 2.
+BEGIN failed--compilation aborted at (eval 9130) line 2.
+
+---- |
+| 2016-04-13T19:28:04+03:00 warning | Foswiki::Plugins::LdapNgPlugin could not be loaded.  Errors were:
+Can't locate Foswiki/Plugins/LdapNgPlugin.pm in @INC (@INC contains: /var/www/foswiki/lib . /var/www/foswiki/lib /var/www/foswiki/bin /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 /var/www/foswiki/lib/CPAN/lib) at (eval 9130) line 2.
+BEGIN failed--compilation aborted at (eval 9130) line 2.
+
+---- |
+| 2016-04-13T19:28:04+03:00 warning | The password file does not exist or cannot be written.Run =configure= and check the setting of {Htpasswd}{FileName}. New user registration has been disabled until this is corrected. |
+| 2016-04-13T19:28:04+03:00 error | Foswiki::Plugins::LdapNgPlugin could not be loaded.  Errors were:
+Can't locate Foswiki/Plugins/LdapNgPlugin.pm in @INC (@INC contains: /var/www/foswiki/lib . /var/www/foswiki/lib /var/www/foswiki/bin /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 /var/www/foswiki/lib/CPAN/lib) at (eval 11382) line 2.
+BEGIN failed--compilation aborted at (eval 11382) line 2.
+
+---- |
+| 2016-04-13T19:28:04+03:00 warning | Foswiki::Plugins::LdapNgPlugin could not be loaded.  Errors were:
+Can't locate Foswiki/Plugins/LdapNgPlugin.pm in @INC (@INC contains: /var/www/foswiki/lib . /var/www/foswiki/lib /var/www/foswiki/bin /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 /var/www/foswiki/lib/CPAN/lib) at (eval 11382) line 2.
+BEGIN failed--compilation aborted at (eval 11382) line 2.
+
+---- |
+| 2016-04-13T19:28:16+03:00 warning | The password file does not exist or cannot be written.Run =configure= and check the setting of {Htpasswd}{FileName}. New user registration has been disabled until this is corrected. |
+| 2016-04-13T19:28:16+03:00 error | Foswiki::Plugins::LdapNgPlugin could not be loaded.  Errors were:
+Can't locate Foswiki/Plugins/LdapNgPlugin.pm in @INC (@INC contains: /var/www/foswiki/lib . /var/www/foswiki/lib /var/www/foswiki/bin /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 /var/www/foswiki/lib/CPAN/lib) at (eval 11990) line 2.
+BEGIN failed--compilation aborted at (eval 11990) line 2.
+
+---- |
+| 2016-04-13T19:28:16+03:00 warning | Foswiki::Plugins::LdapNgPlugin could not be loaded.  Errors were:
+Can't locate Foswiki/Plugins/LdapNgPlugin.pm in @INC (@INC contains: /var/www/foswiki/lib . /var/www/foswiki/lib /var/www/foswiki/bin /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 /var/www/foswiki/lib/CPAN/lib) at (eval 11990) line 2.
+BEGIN failed--compilation aborted at (eval 11990) line 2.
+
+---- |
+| 2016-04-13T19:28:16+03:00 error | Foswiki::Plugins::LdapNgPlugin could not be loaded.  Errors were:
+Can't locate Foswiki/Plugins/LdapNgPlugin.pm in @INC (@INC contains: /var/www/foswiki/lib . /var/www/foswiki/lib /var/www/foswiki/bin /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 /var/www/foswiki/lib/CPAN/lib) at (eval 10501) line 2.
+BEGIN failed--compilation aborted at (eval 10501) line 2.
+
+---- |
+| 2016-04-13T19:28:16+03:00 warning | Foswiki::Plugins::LdapNgPlugin could not be loaded.  Errors were:
+Can't locate Foswiki/Plugins/LdapNgPlugin.pm in @INC (@INC contains: /var/www/foswiki/lib . /var/www/foswiki/lib /var/www/foswiki/bin /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 /var/www/foswiki/lib/CPAN/lib) at (eval 10501) line 2.
+BEGIN failed--compilation aborted at (eval 10501) line 2.
+
+---- |

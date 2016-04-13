@@ -1,0 +1,40 @@
+---+ Installing LdapContrib
+> Loading package installer
+   * fetching LdapContrib installer from http://foswiki.org/pub/Extensions/...
+---++ Dependency Report for LdapContrib ...
+> *INSTALLED*
+	* Authen::SASL version 2.15 installed 
+	* DB_File version 1.830 installed 
+	* DB_File::Lock version 0.05 installed 
+	* Digest::MD5 version 2.52 installed 
+	* GSSAPI version 0.28 installed 
+	* IO::Socket::INET6 version 2.69 installed 
+	* IO::Socket::SSL version 1.94 installed 
+	* Net::LDAP version 0.56 installed 
+---+++ Creating backup of LdapContrib ...
+	* Backup saved into /var/www/foswiki/working/configure/backup/LdapContrib-backup-20160413-193024
+	* Archived as /var/www/foswiki/working/configure/backup/LdapContrib-backup-20160413-193024.tgz
+> Running pre-install for LdapContrib ...
+---+++ Installing LdapContrib
+	* fetching LdapContrib from http://foswiki.org/pub/Extensions/ ...
+> Unpacking /tmp/rWrjhfEwwB.tgz..., Size: 46050 Modified: Wed Apr 13 19:30:24 2016
+> Saving /tmp/rWrjhfEwwB.tgz to /var/www/foswiki/working/configure/download/LdapContrib.tgz
+> Installed: 9 files copied; 1 filed checked in, 0 files attached
+> Installed:  LdapContrib_installer to /var/www/foswiki/working/configure/pkgdata
+> Running post-install for LdapContrib...
+> Before proceeding, review the dependency reports of each installed extension
+  and resolve any dependencies, as required.
+   * External non-perl dependencies are never automatically resolved by Foswiki.
+   * Dependencies noted as 'Optional' will not be automatically resolved, and
+   * CPAN dependencies are never automatically resolved.
+
+> After your configuration has been saved:
+   * Visit <a href="http://wiki.spindance.net/System/LdapContrib" target="_blank">LdapContrib extension page</a>
+   * Check <a href="http://wiki.spindance.net/System/InstalledPlugins" target="_blank">InstalledPlugins</a> to check for errors.
+
+> The following configuration changes are needed to enable plugins.
+These will be automatically applied when the configuration is saved.
+
+
+> *WARNING:* 
+> Installation finished

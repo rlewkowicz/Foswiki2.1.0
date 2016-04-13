@@ -1,0 +1,62 @@
+---+ Installing LdapNgPlugin
+> Loading package installer
+   * fetching LdapNgPlugin installer from http://foswiki.org/pub/Extensions/...
+---++ Dependency Report for LdapNgPlugin ...
+> *INSTALLED*
+	* Cache::Cache version 1.06 installed 
+> *WARNING:*  *MISSING*
+	* Foswiki::Contrib::LdapContrib version >=5.03 required -- perl module is not installed  - Required
+---+++ Creating backup of LdapNgPlugin ...
+	* Nothing to backup
+> Running pre-install for LdapNgPlugin ...
+---+++ Installing LdapNgPlugin
+	* fetching LdapNgPlugin from http://foswiki.org/pub/Extensions/ ...
+> Unpacking /tmp/M7RSv2YMw8.tgz..., Size: 11380 Modified: Wed Apr 13 19:30:24 2016
+> Saving /tmp/M7RSv2YMw8.tgz to /var/www/foswiki/working/configure/download/LdapNgPlugin.tgz
+> Installed: 5 files copied; 0 filed checked in, 0 files attached
+> _Changed:_ {Ldap}{PersonDataForm} = 'UserForm'
+> _Changed:_ {Ldap}{PersonAttribures} = '{
+  givenName => \'FirstName\',
+  sn => \'LastName\',
+  company => \'OrganisationName\',
+  department => \'Department\',
+  division => \'Division\',
+  title => \'Profession\',
+  c => \'Country\',
+  physicalDeliveryOfficeName => \'Address\',
+  postalAddress => \'Address\',
+  streetAddress => \'Address\',
+  facsimileTelephoneNumber => \'Telefax\',
+  l => \'Location\',
+  mail => \'Email\',
+  manager => \'Manager\',
+  mobile => \'Mobile\',
+  telephoneNumber => \'Telephone\',
+  title => \'Title\',
+  uid => \'LoginName\',
+  sAMAccountName => \'LoginName\',
+}'
+> _Changed:_ {Ldap}{IndexEmails} = 1
+> _Changed:_ {Ldap}{PreferLocalSettings} = 1
+> _Changed:_ {Ldap}{DefaultCacheExpire} = 0
+> _Changed:_ {Ldap}{IgnoreViewRightsInSearch} = 0
+> Installed:  LdapNgPlugin_installer to /var/www/foswiki/working/configure/pkgdata
+> Running post-install for LdapNgPlugin...
+> Before proceeding, review the dependency reports of each installed extension
+  and resolve any dependencies, as required.
+   * External non-perl dependencies are never automatically resolved by Foswiki.
+   * Dependencies noted as 'Optional' will not be automatically resolved, and
+   * CPAN dependencies are never automatically resolved.
+
+> After your configuration has been saved:
+   * Visit <a href="http://wiki.spindance.net/System/LdapNgPlugin" target="_blank">LdapNgPlugin extension page</a>
+   * Check <a href="http://wiki.spindance.net/System/InstalledPlugins" target="_blank">InstalledPlugins</a> to check for errors.
+
+> The following configuration changes are needed to enable plugins.
+These will be automatically applied when the configuration is saved.
+
+> _Changed:_ {Plugins}{LdapNgPlugin}{Enabled} = 1
+> _Changed:_ {Plugins}{LdapNgPlugin}{Module} = 'Foswiki::Plugins::LdapNgPlugin'
+
+> *WARNING:* 
+> Installation finished

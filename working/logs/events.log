@@ -1,0 +1,51 @@
+| 2016-04-13T19:27:59+03:00 info | admin | view | Main.WebHome |  (GET) Firefox | 10.211.55.2 |
+| 2016-04-13T19:28:01+03:00 info | admin | configure | Main.WebHome |  Firefox | 10.211.55.2 |
+| 2016-04-13T19:28:01+03:00 info | admin | jsonrpc | Main.WebHome | configure getspec Firefox | 10.211.55.2 |
+| 2016-04-13T19:28:01+03:00 info | admin | jsonrpc | Main.WebHome | configure check_current_value Firefox | 10.211.55.2 |
+| 2016-04-13T19:28:01+03:00 info | admin | jsonrpc | Main.WebHome | configure getspec Firefox | 10.211.55.2 |
+| 2016-04-13T19:28:01+03:00 info | admin | jsonrpc | Main.WebHome | configure getspec Firefox | 10.211.55.2 |
+| 2016-04-13T19:28:02+03:00 info | admin | jsonrpc | Main.WebHome | configure check_current_value Firefox | 10.211.55.2 |
+| 2016-04-13T19:28:02+03:00 info | admin | jsonrpc | Main.WebHome | configure check_current_value Firefox | 10.211.55.2 |
+| 2016-04-13T19:28:04+03:00 info | admin | jsonrpc | Main.WebHome | configure getspec Firefox | 10.211.55.2 |
+| 2016-04-13T19:28:04+03:00 info | admin | jsonrpc | Main.WebHome | configure getspec Firefox | 10.211.55.2 |
+| 2016-04-13T19:28:04+03:00 info | admin | jsonrpc | Main.WebHome | configure check_current_value Firefox | 10.211.55.2 |
+| 2016-04-13T19:28:04+03:00 info | admin | jsonrpc | Main.WebHome | configure getspec Firefox | 10.211.55.2 |
+| 2016-04-13T19:28:04+03:00 info | admin | jsonrpc | Main.WebHome | configure check_current_value Firefox | 10.211.55.2 |
+| 2016-04-13T19:28:04+03:00 info | admin | jsonrpc | Main.WebHome | configure check_current_value Firefox | 10.211.55.2 |
+| 2016-04-13T19:28:16+03:00 info | admin | jsonrpc | Main.WebHome | configure getspec Firefox | 10.211.55.2 |
+| 2016-04-13T19:28:16+03:00 info | admin | jsonrpc | Main.WebHome | configure check_current_value Firefox | 10.211.55.2 |
+| 2016-04-13T19:28:21+03:00 info | admin | jsonrpc | Main.WebHome | configure wizard Firefox | 10.211.55.2 |
+| 2016-04-13T19:30:00+03:00 info | admin | view | Main.WebHome |  (GET) Firefox | 10.211.55.2 |
+| 2016-04-13T19:30:02+03:00 info | admin | configure | Main.WebHome |  Firefox | 10.211.55.2 |
+| 2016-04-13T19:30:03+03:00 info | admin | jsonrpc | Main.WebHome | configure getspec Firefox | 10.211.55.2 |
+| 2016-04-13T19:30:03+03:00 info | admin | jsonrpc | Main.WebHome | configure check_current_value Firefox | 10.211.55.2 |
+| 2016-04-13T19:30:03+03:00 info | admin | jsonrpc | Main.WebHome | configure getspec Firefox | 10.211.55.2 |
+| 2016-04-13T19:30:03+03:00 info | admin | jsonrpc | Main.WebHome | configure getspec Firefox | 10.211.55.2 |
+| 2016-04-13T19:30:03+03:00 info | admin | jsonrpc | Main.WebHome | configure check_current_value Firefox | 10.211.55.2 |
+| 2016-04-13T19:30:04+03:00 info | admin | jsonrpc | Main.WebHome | configure check_current_value Firefox | 10.211.55.2 |
+| 2016-04-13T19:30:05+03:00 info | admin | jsonrpc | Main.WebHome | configure getspec Firefox | 10.211.55.2 |
+| 2016-04-13T19:30:05+03:00 info | admin | jsonrpc | Main.WebHome | configure check_current_value Firefox | 10.211.55.2 |
+| 2016-04-13T19:30:05+03:00 info | admin | jsonrpc | Main.WebHome | configure getspec Firefox | 10.211.55.2 |
+| 2016-04-13T19:30:06+03:00 info | admin | jsonrpc | Main.WebHome | configure getspec Firefox | 10.211.55.2 |
+| 2016-04-13T19:30:06+03:00 info | admin | jsonrpc | Main.WebHome | configure check_current_value Firefox | 10.211.55.2 |
+| 2016-04-13T19:30:06+03:00 info | admin | jsonrpc | Main.WebHome | configure check_current_value Firefox | 10.211.55.2 |
+| 2016-04-13T19:30:10+03:00 info | admin | jsonrpc | Main.WebHome | configure getspec Firefox | 10.211.55.2 |
+| 2016-04-13T19:30:10+03:00 info | admin | jsonrpc | Main.WebHome | configure check_current_value Firefox | 10.211.55.2 |
+| 2016-04-13T19:30:12+03:00 info | admin | jsonrpc | Main.WebHome | configure wizard Firefox | 10.211.55.2 |
+| 2016-04-13T19:30:15+03:00 info | admin | jsonrpc | Main.WebHome | configure wizard Firefox | 10.211.55.2 |
+| 2016-04-13T19:30:21+03:00 info | admin | jsonrpc | Main.WebHome | configure wizard Firefox | 10.211.55.2 |
+| 2016-04-13T19:30:49+03:00 info | admin | jsonrpc | Main.WebHome | configure wizard Firefox | 10.211.55.2 |
+| 2016-04-13T19:31:26+03:00 info | admin | view | Main.WebHome |  (GET) Firefox | 10.211.55.2 |
+| 2016-04-13T19:31:38+03:00 info | admin | jsonrpc | Main.WebHome | configure getspec Firefox | 10.211.55.2 |
+| 2016-04-13T19:31:38+03:00 info | admin | jsonrpc | Main.WebHome | configure check_current_value Firefox | 10.211.55.2 |
+| 2016-04-13T19:31:38+03:00 info | admin | jsonrpc | Main.WebHome | configure getspec Firefox | 10.211.55.2 |
+| 2016-04-13T19:31:39+03:00 info | admin | jsonrpc | Main.WebHome | configure check_current_value Firefox | 10.211.55.2 |
+| 2016-04-13T19:31:40+03:00 info | admin | jsonrpc | Main.WebHome | configure getspec Firefox | 10.211.55.2 |
+| 2016-04-13T19:31:40+03:00 info | admin | jsonrpc | Main.WebHome | configure check_current_value Firefox | 10.211.55.2 |
+| 2016-04-13T19:31:41+03:00 info | admin | jsonrpc | Main.WebHome | configure getspec Firefox | 10.211.55.2 |
+| 2016-04-13T19:31:41+03:00 info | admin | jsonrpc | Main.WebHome | configure check_current_value Firefox | 10.211.55.2 |
+| 2016-04-13T19:31:56+03:00 info | admin | jsonrpc | Main.WebHome | configure check_current_value Firefox | 10.211.55.2 |
+| 2016-04-13T19:31:58+03:00 info | admin | jsonrpc | Main.WebHome | configure getspec Firefox | 10.211.55.2 |
+| 2016-04-13T19:31:58+03:00 info | admin | jsonrpc | Main.WebHome | configure check_current_value Firefox | 10.211.55.2 |
+| 2016-04-13T19:32:18+03:00 info | admin | jsonrpc | Main.WebHome | configure check_current_value Firefox | 10.211.55.2 |
+| 2016-04-13T19:32:21+03:00 info | admin | jsonrpc | Main.WebHome | configure wizard Firefox | 10.211.55.2 |
